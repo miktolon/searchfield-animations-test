@@ -10,12 +10,9 @@ $searchfield-color-focused: #424242;
 
 .inputContainer {
   display: flex;
-
   align-items: center;
-  justify-content: center;
-
+  justify-content: flex-start;
   border: $searchfield-border;
-
   padding: 0 8px;
 
   & svg {
