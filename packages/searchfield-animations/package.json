@@ -1,0 +1,42 @@
+{
+  "name": "@miktolon/searchfield-animations",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/searchfield-animations.umd.js",
+  "style": "./dist/style.css",
+  "module": "./dist/searchfield-animations.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/searchfield-animations.es.js",
+      "require": "./dist/searchfield-animations.umd.js"
+    },
+    "./dist/style.css": {
+      "import": "./dist/style.css",
+      "require": "./dist/style.css"
+    }
+  },
+  "dependencies": {
+    "prop-types": "^15.8.1",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "sass": "^1.51.0"
+  },
+  "peerDependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "@vitejs/plugin-react": "^1.3.0",
+    "vite": "^2.9.9"
+  }
+}

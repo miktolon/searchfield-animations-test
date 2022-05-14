@@ -1,0 +1,11 @@
+{
+  "name": "@miktolon/searchfield-animations-test",
+  "private": true,
+  "version": "1.0.0",
+  "workspaces": {
+    "packages": [
+      "packages/*",
+      "sites/*"
+    ]
+  }
+}

@@ -1,0 +1,66 @@
+@import '@miktolon/searchfield-animations/dist/style.css';
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.top-40 {
+  margin-top: 40px;
+}
+
+.row {
+  display: flex;
+  padding: 0 15px;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 15px 0;
+  margin: 0 15px;
+  align-items: flex-start;
+}
+
+.group {
+  background-color: white;
+  border: 0 solid #e5e7eb;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 10%), 0 4px 6px -4px rgb(0 0 0 / 10%);
+}
+
+.group-1 {
+  padding: 15px 20px 20px 20px;
+}
+
+.group-info {
+  padding: 5px 15px;
+
+  & code {
+    background-color: #efefef;
+    padding: 4px 8px;
+  }
+}
+
+.group-2 {
+  padding: 15px;
+  width: 100%;
+  
+  > div {
+    max-height: calc(100vh - 220px);
+  }
+  h2 {
+    margin-left: 5px;
+  }
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+
+    li {
+      padding: 8px 6px;
+      border-bottom: 1px solid #ddd;
+      font-size: 14px;
+    }
+  }
+}

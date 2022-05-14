@@ -1,0 +1,100 @@
+$searchfield-border: 1px solid #a6a7a8;
+$searchfield-color: #7f8181;
+
+$searchfield-border-focused: 1px solid #5a5a5a;
+$searchfield-color-focused: #424242;
+
+.container {
+  position: relative;
+}
+
+.inputContainer {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border: $searchfield-border;
+
+  padding: 0 8px;
+
+  & svg {
+    color: $searchfield-color;
+  }
+
+  .icon {
+    display: flex;
+    align-items: center;
+  }
+
+  .input {
+    position: relative;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    
+    color: $searchfield-color;
+    background-color: #fff;
+    border: 0;
+    
+    border-radius: 0.25rem;
+    outline: none;
+    
+    min-width: 300px;
+    
+    &::placeholder {
+        font-size: 14px;
+    }
+  }
+}
+
+.focused {
+  border: $searchfield-border-focused;
+
+  & svg {
+    color: $searchfield-color-focused;;
+  }
+
+  .input {
+    color: $searchfield-color-focused;
+  }
+}
+
+.activityIndicator {
+  min-width: 45px;
+}
+
+.resultsContainer {
+  position: absolute;
+  top: inherit;
+  left: 0;
+  right: 0;
+  padding: 0;
+  background-color: #eee;
+  transition: height 250ms;
+  border: 0 solid #e5e7eb;
+  box-shadow: 0 20px 20px -3px rgb(0 0 0 / 15%), 0 8px 12px -4px rgb(0 0 0 / 15%);
+}
+
+.result {
+  background-color: white;
+  padding: 12px 12px;
+  border-bottom: 1px solid #ddd;
+  cursor: pointer;
+  font-size: 14px;
+
+  &:hover {
+    background-color: #eeeeee !important;
+  }
+}
+
+.footer {
+  background-color: #eee;
+  padding: 8px;
+
+  & small {
+    color: #888;
+    font-size: 12px;
+    font-weight: bold;
+  }
+}
